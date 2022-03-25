@@ -11,7 +11,7 @@ def GRADING(per_clf,tanh,ReLu,LeakyRelu,derivative,X_train):
             "X_train_prepro":False}
     
     try:
-        if(per_clf.predict([X[5,:]])[0]==1): grades["Peceptron"]=True
+        if(per_clf.predict([[1.7, 0.4]])[0]==1): grades["Peceptron"]=True
     except: grades["Peceptron"]=False
 
     try:
